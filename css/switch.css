@@ -21,6 +21,7 @@
   vertical-align: top;
   box-sizing: border-box;
   background-clip: padding-box;
+  z-index: 1;
 }
 .switch__input {
   position: absolute;
