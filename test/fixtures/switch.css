@@ -15,29 +15,25 @@
 * limitations under the License.
 *
 */
-@import utils
+@import "./src/switch.css";
 
-.switch
-  inline-block()
-  reset-box-model()
-  z-index: 1
+.switch {
+  extend: %switch;
+}
 
-.switch__input
-  hide-input()
+.switch__input {
+  extend: %switch__input;
+}
 
-.switch__toggle
-  inline-block()
-  reset-box-model()
-  reset-base()
-  reset-cursor()
+.switch__toggle {
+  extend: %switch__toggle;
+}
 
 .switch__toggle:before,
-.switch__toggle:after
-  content ''
-  position absolute
-  z-index: -1
-  reset-box-model()
+.switch__toggle:after {
+  extend: %switch__toggle--pseudo;
+}
 
-.switch--disabled
-  disabled()
-
+.switch:disabled {
+  extend: %switch--disabled;
+}

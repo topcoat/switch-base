@@ -15,3 +15,32 @@
 * limitations under the License.
 *
 */
+@import "topcoat-utils";
+
+%switch {
+  extend: %inline-block;
+  extend: %reset-box-model;
+  z-index: 1;
+}
+
+%switch__input {
+  extend: %hide-input;
+}
+
+%switch__toggle {
+  extend: %inline-block;
+  extend: %reset-box-model;
+  extend: %reset-base;
+  extend: %reset-cursor;
+}
+
+%switch__toggle--pseudo {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  extend: %reset-box-model;
+}
+
+%switch--disabled {
+  extend: %disabled;
+}
