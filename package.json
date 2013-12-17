@@ -2,6 +2,7 @@
   "name": "topcoat-switch-base",
   "version": "0.1.0",
   "description": "Topcoat switch base.",
+  "style": "css/switch.css",
   "directories": {
     "test": "test",
     "lib": "src"
@@ -25,12 +26,9 @@
   "license": "Apache",
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-contrib-watch": "~0.4.4",
     "grunt-contrib-cssmin": "~0.6.1",
-    "grunt-contrib-jade": "~0.7.0",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-simple-mocha": "~0.4.0",
-    "grunt-rework": "0.0.5",
     "grunt-topcoat": "~0.1.0"
   },
   "dependencies": {
