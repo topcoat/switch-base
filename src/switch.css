@@ -15,29 +15,33 @@
 * limitations under the License.
 *
 */
-@import utils
+@import "topcoat-utils";
 
-.switch
-  inline-block()
-  reset-box-model()
-  z-index: 1
+%switch {
+  extend: %inline-block;
+  extend: %reset-box-model;
+  z-index: 1;
+}
 
-.switch__input
-  hide-input()
+%switch__input {
+  extend: %hide-input;
+}
 
-.switch__toggle
-  inline-block()
-  reset-box-model()
-  reset-base()
-  reset-cursor()
+%switch__toggle {
+  extend: %inline-block;
+  extend: %reset-box-model;
+  extend: %reset-base;
+  extend: %reset-cursor;
+}
 
-.switch__toggle:before,
-.switch__toggle:after
-  content ''
-  position absolute
-  z-index: -1
-  reset-box-model()
+%switch__toggle--pseudo {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  extend: %reset-box-model;
+}
 
-.switch--disabled
-  disabled()
+%switch--disabled {
+  extend: %disabled;
+}
 

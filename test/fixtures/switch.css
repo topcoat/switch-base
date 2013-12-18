@@ -15,3 +15,25 @@
 * limitations under the License.
 *
 */
+@import "./src/switch.css";
+
+.switch {
+  extend: %switch;
+}
+
+.switch__input {
+  extend: %switch__input;
+}
+
+.switch__toggle {
+  extend: %switch__toggle;
+}
+
+.switch__toggle:before,
+.switch__toggle:after {
+  extend: %switch__toggle--pseudo;
+}
+
+.switch:disabled {
+  extend: %switch--disabled;
+}
