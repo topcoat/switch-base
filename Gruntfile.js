@@ -29,7 +29,8 @@ module.exports = function(grunt) {
 
         topcoat: {
             options: {
-                browsers: ['last 2 versions']
+                browsers: ['last 2 versions'],
+                license: grunt.file.read('test/fixtures/license.txt')
             },
             compile: {
                 files: [{
