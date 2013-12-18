@@ -2,7 +2,7 @@
   "name": "topcoat-switch-base",
   "version": "0.1.0",
   "description": "Topcoat switch base.",
-  "style": "css/switch.css",
+  "style": "src/switch.css",
   "directories": {
     "test": "test",
     "lib": "src"
